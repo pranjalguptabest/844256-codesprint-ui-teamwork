@@ -1,0 +1,245 @@
+<html>
+<head>
+<title>Be Healthy</title>
+<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" >
+
+</head>
+<body ><main class="cww">
+<div>
+
+  <img style="width: 70px;height: auto;" class="rounded-circle" src="a.png">
+</div>
+<div class="dropdwn">
+<nav>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="place.html">Place Appointment  </a>
+<ul>
+
+<ul>
+<li><a href="work.html">Works</a></li>
+<li><a href="status.html">Status</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="appointment.html">View Appointment</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="feedback.html">Feedback</a></li>
+</ul>
+</div> 
+<div class="row">
+  <div class="col-lg-2">
+    <div style=" position: fixed; left: 0;width: 250px; height: 100%; ">
+      <ul>
+        <li><a href="overview.html" style="color: antiquewhite;"><i class="fas fa-stream" style="line-height: 65px;font-size: 20px;color: white;padding-left: 40px;"></i>Overview</a></li>
+        <li><a href="event.html" style="color: antiquewhite;"><i class="fas fa-calendar-week" style="line-height: 65px;font-size: 20px;color: white;padding-left: 40px;"></i>Events</a></li>
+        <li><a href="about.html" style="color: antiquewhite;"><i class="far fa-question-circle" style="line-height: 65px;font-size: 20px;color: white;padding-left: 40px;"></i>About</a></li>
+        <li><a href="service.html" style="color: antiquewhite;"><i class="fas fa-sliders-h" style="line-height: 65px;font-size: 20px;color: white;padding-left: 40px;"></i>Service</a></li>
+        <li style="color: antiquewhite;"><a href="gallery.html" style="color: antiquewhite;"><i class="far fa-envelope" style="line-height: 65px;font-size: 20px;color: white;padding-left: 40px;"></i>gallery</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="col-lg-10 jumbotron" style="background-color: rgb(211, 198, 198,0.5);">
+    <h3>Book Appointment</h3>
+    <form style="color: black;">
+      <div class="row">
+        <h5 style="color: black;">Name</h5><br>
+        <div class="col" style="width: 30%;">
+          <input type="text" class="form-control" style="color: black;" placeholder="First name">
+        </div>
+        <div class="col" style="width: 30%;">
+          <input type="text" class="form-control" placeholder="Last name">
+        </div>
+      </div>
+      <div class="dropdown">
+         <span> <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          AGE
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#"> </a>
+            <a class="dropdown-item" href="#">10-20</a>
+            <a class="dropdown-item" href="#">20-30</a>
+            <a class="dropdown-item" href="#">30-40</a>
+            <a class="dropdown-item" href="#">40-50</a>
+            
+          </div>
+      </span>
+         <span>
+          <div class="form-group">
+              <label>Email address</label>
+              <input type="email" class="form-control" style="width: 30%;">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+      </span>
+      MOBILE NO:
+      <input  style="color: black;"id="codeBox1" type="number" maxlength="1" onkeyup="onKeyUpEvent(1, event)" onfocus="onFocusEvent(1)"/>
+            <input  style="color: black;"width:50px id="codeBox2" type="number" maxlength="1" onkeyup="onKeyUpEvent(2, event)" onfocus="onFocusEvent(2)"/>
+            <input  style="color: black;"id="codeBox3" type="number" maxlength="1" onkeyup="onKeyUpEvent(3, event)" onfocus="onFocusEvent(3)"/>
+            <input  style="color: black;"id="codeBox4" type="number" maxlength="1" onkeyup="onKeyUpEvent(4, event)" onfocus="onFocusEvent(4)"/>
+            <input  style="color: black;"id="codeBox5" type="number" maxlength="1" onkeyup="onKeyUpEvent(5, event)" onfocus="onFocusEvent(5)"/>
+            <input  style="color: black;"id="codeBox6" type="number" maxlength="1" onkeyup="onKeyUpEvent(6, event)" onfocus="onFocusEvent(6)"/>
+            <input  style="color: black;"id="codeBox7" type="number" maxlength="1" onkeyup="onKeyUpEvent(7, event)" onfocus="onFocusEvent(7)"/>
+            <input  style="color: black;"id="codeBox8" type="number" maxlength="1" onkeyup="onKeyUpEvent(8, event)" onfocus="onFocusEvent(8)"/>
+            <input  style="color: black;"id="codeBox9" type="number" maxlength="1" onkeyup="onKeyUpEvent(9, event)" onfocus="onFocusEvent(9)"/>
+            <input  style="color: black;"id="codeBox10" type="number" maxlength="1" onkeyup="onKeyUpEvent(10, event)" onfocus="onFocusEvent(10)"/>  
+      </div> 
+     
+      
+      <fieldset style="width: 20px;"> 
+          <legend style="border: 2px;">ADDRESS:</legend>
+          Address: <input type="text"><br>
+         city: <input type="text">
+          state: <input type="text">
+         
+          <select>
+
+             <option>COUNTRY</option>
+                 n Republic of</option>
+                  <option value="VN">Viet Nam</option>
+                  <option value="VG">Virgin Islands, British</option>
+                  <option value="VI">Virgin Islands, U.S.</option>
+                  <option value="WF">Wallis and Futuna</option>
+                  <option value="EH">Western Sahara</option>
+                  <option value="YE">Yemen</option>
+                  <option value="ZM">Zambia</option>
+                  <option value="ZW">Zimbabwe</option>
+             
+      </select><br>
+    
+      pincode:<input type="text"> 
+         </fieldset>
+         Trainerpreference:<br>
+         <input type="radio" name="mine1"/>Male Trainer<br>
+         <input type="radio" name="mine1"/>Female Trainer<br>
+         <input type="radio" name="mine1"/>no preference<br>
+         <input type="radio" name="mine1"/>Trainer Name <br><input type="text"/><br>
+         <input type="radio" name="mine1"/>Others <br><input type="text"/><br>
+
+         Do you need a physiotherpist?<br>
+         <input type="radio"/>yes <input type="radio" /> No
+         <table border="2px">
+             <tr>
+                 <th>Day</th>
+                 <th>7 to 9 am</th>
+                 <th>9 to 11 am</th>
+                 <th>11 to 1 pm</th>
+                 <th>1 to 3 pm</th>
+                 <th>3 to 5 pm</th>
+             </tr>
+             <tr>
+             <td>Monday</td>
+             <td><input type="radio" name="row-1" data-col="7 to 9 am"></td>
+             <td><input type="radio" name="row-1" data-col="9 to 11 am"></td>
+             <td><input type="radio" name="row-1" data-col="11 to 1 pm"></td>
+             <td><input type="radio" name="row-1" data-col="1 to 3 pm"></td>
+             <td><input type="radio" name="row-1" data-col="3 to 5 pm"></td>
+             </tr>
+             <tr>
+              <td>Tuesday</td>
+              <td><input type="radio" name="row-2" data-col="7 to 9 am"></td>
+              <td><input type="radio" name="row-2" data-col="9 to 11 am"></td>
+              <td><input type="radio" name="row-2" data-col="11 to 1 pm"></td>
+              <td><input type="radio" name="row-2" data-col="1 to 3 pm"></td>
+              <td><input type="radio" name="row-2" data-col="3 to 5 pm"></td>
+              </tr>
+              <tr>
+                  <td>Wednesday</td>
+                  <td><input type="radio" name="row-3" data-col="7 to 9 am"></td>
+                  <td><input type="radio" name="row-3" data-col="9 to 11 am"></td>
+                  <td><input type="radio" name="row-3" data-col="11 to 1 pm"></td>
+                  <td><input type="radio" name="row-3" data-col="1 to 3 pm"></td>
+                  <td><input type="radio" name="row-3" data-col="3 to 5 pm"></td>
+                  </tr>
+                  <tr>
+                      <td>thursday</td>
+                      <td><input type="radio" name="row-4" data-col="7 to 9 am"></td>
+                      <td><input type="radio" name="row-4" data-col="9 to 11 am"></td>
+                      <td><input type="radio" name="row-4" data-col="11 to 1 pm"></td>
+                      <td><input type="radio" name="row-4" data-col="1 to 3 pm"></td>
+                      <td><input type="radio" name="row-4" data-col="3 to 5 pm"></td>
+                      </tr>
+                      <tr>
+                          <td>Friday</td>
+                          <td><input type="radio" name="row-5" data-col="7 to 9 am"></td>
+                          <td><input type="radio" name="row-5" data-col="9 to 11 am"></td>
+                          <td><input type="radio" name="row-5" data-col="11 to 1 pm"></td>
+                          <td><input type="radio" name="row-5" data-col="1 to 3 pm"></td>
+                          <td><input type="radio" name="row-5" data-col="3 to 5 pm"></td>
+                          </tr>
+                          <tr>
+                              <td>Saturday</td>
+                              <td><input type="radio" name="row-6" data-col="7 to 9 am"></td>
+                              <td><input type="radio" name="row-6" data-col="9 to 11 am"></td>
+                              <td><input type="radio" name="row-6" data-col="11 to 1 pm"></td>
+                              <td><input type="radio" name="row-6" data-col="1 to 3 pm"></td>
+                              <td><input type="radio" name="row-6" data-col="3 to 5 pm"></td>
+                              </tr>
+                              <tr>
+                                  <td>Sunday</td>
+                                  <td><input type="radio" name="row-7" data-col="7 to 9 am"></td>
+                                  <td><input type="radio" name="row-7" data-col="9 to 11 am"></td>
+                                  <td><input type="radio" name="row-7" data-col="11 to 1 pm"></td>
+                                  <td><input type="radio" name="row-7" data-col="1 to 3 pm"></td>
+                                  <td><input type="radio" name="row-7" data-col="3 to 5 pm"></td>
+                                  </tr>
+         </table>
+         Select a Package:<br>
+         <input type="radio" name="mp-1"/>one time assesment only (INR 500)<br>
+         <input type="radio" name="mp-1"/>4 weekly sessions (INR 400/session)<br>
+         <input type="radio"  name="mp-1"/>12 weekly sessions (INR 300/session)<br>
+         <input type="radio" name="mp-1"/>Other <input type="text"/><br>
+Quote:<br><br>
+INR:<input type="number"/>paisa:<input type="number"/><br>
+<input type="submit" value="Submit"/>
+         
+
+    </form>
+    <script>
+function getCodeBoxElement(index) {
+  return document.getElementById('codeBox' + index);
+}
+function onKeyUpEvent(index, event) {
+  const eventCode = event.which || event.keyCode;
+  if (getCodeBoxElement(index).value.length === 1) {
+    if (index !== 10) {
+      getCodeBoxElement(index + 1).focus();
+    } else {
+      getCodeBoxElement(index).blur();
+      // Submit code
+      console.log('submit code ');
+    }
+  }
+  if (eventCode === 8 && index !== 1) {
+    getCodeBoxElement(index - 1).focus();
+  }
+}
+function onFocusEvent(index) {
+  for (item = 1; item < index; item++) {
+    const currentElement = getCodeBoxElement(item);
+    if (!currentElement.value) {
+        currentElement.focus();
+        break;
+    }
+  }
+}
+</script>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </div>
+        
+    
+  </div>
+          
+</div>
+</nav>
+</main>
+</body>
+</html>

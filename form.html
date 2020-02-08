@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+      .sub-button{
+            color:white;
+            background-color: rgb(17, 204, 48);
+      }
+      ul{
+          text-decoration: none;
+          list-style-type: none;
+          overflow: hidden;          
+          background-color: black;
+      }
+      input ::-webkit-inner-spin-button,::-webkit-outer-spin-button{
+          -webkit-appearance: none;
+          margin: 0;
+      }
+       ul li{
+           
+          display: block;
+          color:white;
+          float:right;
+          padding: 10px;
+      }
+      ul li a{
+          padding: 10px;
+          color: white;
+          text-decoration: none;
+
+      }
+      ul li:hover{
+          background-color: white;
+          color:black;
+      }
+      ul li a:hover{
+        text-decoration: none;
+        color:black;
+      }
+    
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+
+   
+    
+    <form action="hackathon page3.html" onsubmit="return store()">
+        <label>NAME</label>
+        <br>
+        <input  type="text" id="firstName"class="firstName" placeholder="first Name" width="400px" required > <input type="text" required placeholder="Last Name" id="lastName" width="250px">
+        <br>
+        <br>
+        <div>
+        <span><label>age:-</label>
+        <select required id="age">
+            <option value="10-20">10-20</option>
+            <option>20-30</option>
+            <option>30-40</option>
+            <option>40-50</option>
+            <option>50-60</option>
+            <option>60-65</option>
+        </select>
+    </span>
+    <span>
+        <label >Email:-</label><input type="email" id="email" width=" 400px" required placeholder="mail">
+    </span>
+    <span>
+        <label>
+            phone:-
+        </label>
+        <select>
+            <option aria-placeholder="select country code">+91</option>
+        </select>
+        <span >
+        <input type="text" id="contact" name="telephone1"  id="telephone" data-next="telephone2" style="width: 25px; " maxlength="1" required pattern="[1-9]">
+        <input type="text" name="telephone2" id="telephone"  data-next="telephone3" data-previous="telephone1"required maxlength="1" style="width: 25px;" pattern="[0-9]">
+        <input type="text" name="telephone3" id="telephone" data-next="telephone4" data-previous="telephone2" required maxlength="1" style="width: 25px;" pattern="[0-9]">
+        <input type="text" name="telephone4" id="telephone" data-next="telephone5" data-previous="telephone3" required maxlength="1" style="width: 25px;"pattern="[0-9]">
+        <input type="text" name="telephone5" id="telephone" data-next="telephone6" data-previous="telephone3" required maxlength="1" style="width: 25px;" pattern="[0-9]">
+        <input type="text" name="telephone6" id="telephone" data-next="telephone7"  data-previous="telephone5" required maxlength="1" style="width: 25px;" pattern="[0-9]">
+        <input type="text" name="telephone7" id="telephone" data-next="telephone8" data-previous="telephone6" required maxlength="1" style="width: 25px;" pattern="[0-9]">
+        <input type="text" name="telephone8" id="telephone" data-next="telephone9" data-previous="telephone7" required maxlength="1" style="width: 25px;"pattern="[0-9]">
+        <input type="text" name="telephone9" id="telephone" data-next="telephone10" data-previous="telephone8" required maxlength="1" style="width: 25px;" pattern="[0-9]">
+        <input type="text" name="telephone10" id="telephone" data-previous="telephone9" style="width: 25px;" required maxlength="1" pattern="[0-9]"> 
+    </span>
+    </span>
+    </div>
+
+    <div>
+        <fieldset>
+            <legend>
+                ADDRESS
+            </legend>
+            <label>
+                STREET-ADDRESS
+            </label>
+            <input type="text"  style="width: 600px;" required>
+            <br>
+            <span><label>city:-</label>
+            <input type="text" name="city" style="width: 200px;" required>
+            <label>state:-</label>
+            <input type="text" name="state" style="width: 200px;" required>
+            <label>country:-</label>
+            <select required>
+                <option>india</option>
+                <option>America</options>
+                <option>Canada</option>
+                <option>Chaina</option>
+                <option>Australia</option>
+            </select>
+            <br>
+        </span>
+        <label>pincode:-</label><input type="text" required style="width: 100px;">
+        </fieldset>
+    </div>
+        <h1>Trainer type</h1>
+        <input type="radio" name="preference" required >male trainer<br>
+        <input type="radio" name="preference" required>female trainer<br>
+        <input type="radio" name="preference" required>no preference<br>
+        <pre><input type="radio" name="preference" required>trainer name<input type="text"></pre>
+        <pre><input type="radio" name="preference" required>others      <input type="text"></pre>
+        
+    </div>
+    <br>
+    <div><h1>do you want a physio</h1></div>
+    <input type="radio" name="phy" required>yes<br>
+    <input type="radio" name="phy" required>no<br>
+    <div>
+    <br>
+    <div>
+        <table border="4px">
+            <header><h1>Appointment timings</h1></header>
+            <tr>
+                <th>DAY</th>
+                <th>7AM-9AM</th>
+                <th>9AM-11AM</th>
+                <th>11AM-1PM</th>
+                <th>1PM-3PM</th>
+                <th>3PM-5PM</th>
+            </tr>
+            <tr>
+                <td>MONDAY</td>
+                <td><input type="radio"  id="appoint" value="7AM-9AM" name="monday-appointment" checked="none"> </td>
+                <td><input type="radio" id="appoint" value="9AM-11AM" name="monday-appointment"></td>
+                <td><input type="radio" id="appoint" value="11AM-1PM" name="monday-appointment"></td>
+                <td><input type="radio" id="appoint" value="1PM-3PM"  name="monday-appointment"></td>
+                <td><input type="radio" id="appoint" value="3PM-5PM"  name="monday-appointment"></td>
+            </tr>
+            <tr>
+                <td>TUESDAY</td>
+                <td><input type="radio" value="7AM-9AM" name="tuesday-appointment"></td>
+                <td><input type="radio" value="9AM-11AM"  name="tuesday-appointment"></td>
+                <td><input type="radio"  value="11AM-1PM" name="tuesday-appointment"></td>
+                <td><input type="radio"  value="1PM-3PM" name="tuesday-appointment"></td>
+                <td><input type="radio" value="3PM-5PM" name="tuesday-appointment"></td>
+            </tr>
+            <tr>
+                <td>WEDNESDAY</td>
+                <td><input type="radio" value="7AM-9AM" name="wednesday-appointment"></td>
+                <td><input type="radio"  value="9AM-11AM" name="wednesday-appointment"></td>
+                <td><input type="radio" value="11AM-1PM"  name="wednesday-appointment"></td>
+                <td><input type="radio" value="1PM-3PM" name="wednesday-appointment"></td>
+                <td><input type="radio" value="3PM-5PM"  name="wednesday-appointment"></td>
+            </tr>
+            <tr>
+                <td>THURSDAY</td>
+                <td><input type="radio" value="7AM-9AM"  name="thursday-appointment"></td>
+                <td><input type="radio" value="9AM-11AM"  name="thursday-appointment"></td>
+                <td><input type="radio" value="11AM-1PM" name="thursday-appointment"></td>
+                <td><input type="radio"  value="1PM-3PM" name="thursday-appointment"></td>
+                <td><input type="radio" value="3PM-5PM"  name="thursday-appointment"></td>
+            </tr>
+            <tr>
+                <td>FRIDAY</td>
+                <td><input type="radio" value="7AM-9AM" name="friday-appointment"></td>
+                <td><input type="radio" value="9AM-11AM" name="friday-appointment"></td>
+                <td><input type="radio" value="11AM-1PM"  name="friday-appointment"></td>
+                <td><input type="radio" value="1PM-3PM"  name="friday-appointment"></td>
+                <td><input type="radio" value="3PM-5PM"  name="friday-appointment"></td>
+            </tr>
+            <tr>
+                <td>SATURDAY</td>
+                <td><input type="radio" value="7AM-9AM"  name="saturday-appointment"></td>
+                <td><input type="radio" value="9AM-11AM"  name="saturday-appointment"></td>
+                <td><input type="radio" value="11AM-1PM"  name="saturday-appointment"></td>
+                <td><input type="radio" value="1PM-3PM"  name="saturday-appointment"></td>
+                <td><input type="radio" value="3PM-5PM" name="saturday-appointment"></td>
+            </tr>
+            <tr>
+                <td>SUNDAY</td>
+                <td><input type="radio" value="7AM-9AM"  name="sunday-appointment"></td>
+                <td><input type="radio" value="9AM-11AM"  name="sunday-appointment"></td>
+                <td><input type="radio" value="11AM-1PM"  name="sunday-appointment"></td>
+                <td><input type="radio" value="1PM-3PM"  name="sunday-appointment"></td>
+                <td><input type="radio" value="3PM-5PM" name="sunday-appointment"></td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <br>
+    <div>
+        <h1>select any of the package</h1>
+        <pre style="font-size: 16px;"><input type="radio" id="p-1" name="package" value="500" > one time assesment          (INR.500)</pre>
+        <pre style="font-size: 16px;"><input type="radio" id="p-1" name="package" value="450"> four weekly sessions          (INR.450/per session)</pre style="font-size: 16px;">
+        <pre style="font-size: 16px;"><input type="radio" id="p-1" name="package" value="400"> ten weekly sesions            (INR.400/session)</pre style="font-size: 16px;">
+        <pre style="font-size: 16px;"><input type="radio" id="p-11"  name="package" value="300"> twelve weekly sessions        (INR.300/session)</pre style="font-size: 16px;">
+        <pre style="font-size: 16px;"><input type="radio" id="p-12" name="package"> others                        <input type="text"></pre style="font-size: 16px;">
+        <pre style="font-size: 16px;">                        (quote will be shared with you on a phone call)</pre>
+    </div>
+
+    <div>
+        <h2>Quote:</h2><br>
+        <div >
+        <pre style="line-break: 0;">           <input type="text" id="q-rupees" class="q-rupees" style="width: 30px;">.<input type="text" id="q-paise" class="q-paise" style="width: 30px;">  </pre>
+        <pre>           INR  Paise</pre>
+    </div>
+</div>
+
+<button class="sub-button" type="submit" style="width: 100px;">submit</button>
+    </form>
+        
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<script>
+    
+    firstName.focus();
+     let resultar=[];
+    function store(){
+
+
+    var fname=document.getElementById("firstName").value;
+    var lname=document.getElementById("lastName").value;
+    var age=document.getElementById("age").value;
+    var email=document.getElementById("email").value;
+    var contact=document.getElementById("contact").value;
+    var appointmon,appointtue,appointwed,appointthur,appointfri,appointsat,appointsun;
+
+
+        localStorage.setItem("fname",fname);
+        localStorage.setItem("lname",lname);
+        localStorage.setItem("age",age);
+        localStorage.setItem("email",email);
+        localStorage.setItem("contact",contact);
+
+        
+            var ele = document.getElementsByName('monday-appointment'); 
+              
+            for(i = 0; i < ele.length; i++) { 
+                if(ele[i].checked) 
+                appointmon= ele[i].value; 
+            }
+        localStorage.setItem("appointmon",appointmon);
+            
+            var ele = document.getElementsByName('tuesday-appointment'); 
+              
+            for(i = 0; i < ele.length; i++) { 
+                if(ele[i].checked) 
+                appointtue= ele[i].value; 
+            } 
+            
+        localStorage.setItem("appointtue",appointtue);
+            var ele = document.getElementsByName('wednesday-appointment'); 
+              
+            for(i = 0; i < ele.length; i++) { 
+                if(ele[i].checked) 
+                appointwed= ele[i].value; 
+            } 
+            
+        localStorage.setItem("appointwed",appointwed);
+            var ele = document.getElementsByName('thursday-appointment'); 
+              
+            for(i = 0; i < ele.length; i++) { 
+                if(ele[i].checked) 
+                appointthur= ele[i].value; 
+            } 
+            
+        localStorage.setItem("appointthur",appointthur);
+            var ele = document.getElementsByName('friday-appointment'); 
+              
+            for(i = 0; i < ele.length; i++) { 
+                if(ele[i].checked) 
+                appointfri= ele[i].value; 
+            } 
+            
+        localStorage.setItem("appointfri",appointfri);
+            var ele = document.getElementsByName('saturday-appointment'); 
+              
+            for(i = 0; i < ele.length; i++) { 
+                if(ele[i].checked) 
+                appointsat= ele[i].value; 
+            } 
+            
+        localStorage.setItem("appointsat",appointsat);
+            var ele = document.getElementsByName('sunday-appointment'); 
+              
+            for(i = 0; i < ele.length; i++) { 
+                if(ele[i].checked) 
+                appointsun= ele[i].value; 
+            } 
+            
+        localStorage.setItem("appointsun",appointsun);
+        
+
+        
+    }
+
+</script>
+<script>
+    
+</script>
+</body>
+</html>
