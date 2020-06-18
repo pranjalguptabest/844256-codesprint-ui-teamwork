@@ -1,2 +1,2 @@
-# 844256-codesprint-ui-teamwork
+# Fitness Tracker
 Team work for hackthon
